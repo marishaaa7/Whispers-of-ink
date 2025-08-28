@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Whispers of Ink - Blogs</title>
+    <link rel="icon" href="logo.png">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #fffaf0;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* HEADER STYLING */
+        header {
+            background: white;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 30px;
+            margin-right: 8px;
+        }
+
+        .logo h1 {
+            font-family: 'Playfair Display', serif;
+            color: goldenrod;
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            margin: 0 15px;
+            font-weight: 500;
+            padding-bottom: 5px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: goldenrod;
+        }
+
+        nav a.active {
+            border-bottom: 2px solid goldenrod;
+            color: goldenrod;
+        }
+
+        .social-icons a {
+            margin-left: 15px;
+            font-size: 1.2rem;
+            color: black;
+            text-decoration: none;
+        }
+
+        /* MAIN CONTENT */
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .page-title {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: goldenrod;
+            margin-bottom: 40px;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .blog-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            cursor: pointer;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+        }
+
+        .blog-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: goldenrod;
+            margin-bottom: 10px;
+        }
+
+        .blog-text {
+            color: #444;
+            line-height: 1.6;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: goldenrod;
+            color: white;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="a.png" alt="Logo">
+    </div>
+    <nav>
+        <a href="Whispers of ink.html">Home</a>
+        <a href="poems.html">Poems</a>
+        <a href="blogs.html" class="active">Blogs</a>
+        <a href="books.html">Books</a>
+        <a href="support.html">Support</a>
+    </nav>
+  <div class="social-icons">
+        <a href="https://www.instagram.com/_whispersof_ink_/"><img src="instagram.jpg" alt="Instagram" height="20"></a>
+        <a href="https://www.wattpad.com/user/Whispersofink3"><img src="wattpad.jpg" alt="Wattpad" height="20"></a>
+        <a href="https://www.youtube.com/channel/UC5YR04rRZL_YfJEEXhyXkTQ"><img src="youtube.jpg" alt="YouTube" height="20"></a>
+    </div>
+</header>
+
+<div class="container">
+    <h2 class="page-title">Thoughts & Reflections</h2>
+
+    <div class="blog-grid">
+        <div class="blog-card" onclick="window.location.href='love.html'">
+            <h3 class="blog-title">LOVE</h3>
+            <p class="blog-text">The Quiet Language of Love</p>
+        </div>
+         <div class="blog-card" onclick="window.location.href='fiction.html'">
+            <h3 class="blog-title">FICTION</h3>
+            <p class="blog-text">The Art of Living a Thousand Lives</p>
+        </div>
+        <div class="blog-card" onclick="window.location.href='journey.html'">
+            <h3 class="blog-title">JOURNEY</h3>
+            <p class="blog-text">It’s not about the destination, it’s about the journey</p>
+        </div>
+
+
+
+</body>
+</html>
+

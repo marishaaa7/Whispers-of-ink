@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FICTION — Starry Night</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: #f1f5f9;
+      background: #0b1120;
+      height: 100%;
+      overflow-x: hidden;
+    }
+
+    /* Starry background animation */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200%;
+      height: 200%;
+      background:
+        radial-gradient(2px 2px at 20% 30%, white, transparent),
+        radial-gradient(2px 2px at 80% 70%, white, transparent),
+        radial-gradient(1.5px 1.5px at 50% 80%, white, transparent),
+        radial-gradient(1.2px 1.2px at 60% 20%, white, transparent),
+        radial-gradient(1.8px 1.8px at 90% 50%, white, transparent);
+      background-repeat: repeat;
+      animation: moveStars 60s linear infinite;
+      z-index: -1;
+    }
+
+    @keyframes moveStars {
+      from { transform: translate(0,0); }
+      to { transform: translate(-50%, -50%); }
+    }
+
+    .wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 4rem 1rem;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      text-align: center;
+      margin-bottom: 2rem;
+      letter-spacing: 2px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 2rem;
+      border-radius: 1rem;
+      backdrop-filter: blur(4px);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+      color: #e2e8f0;
+      line-height: 1.8;
+    }
+
+    .section-title {
+      margin-top: 1.5rem;
+      font-weight: bold;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>FICTION</h1>
+    <div class="card">
+      <p>When you open the first page of a fiction book, you’re not just reading — you’re stepping into another world. Fiction is a passport without expiry, a time machine without buttons, and a mirror that reflects not just who we are, but who we could be.</p>
+
+      <p>From the dusty streets of Victorian London to distant galaxies beyond the reach of any telescope, fiction lets us live lives we’ve never known. In just a few chapters, we might become a detective solving impossible mysteries, a rebel fighting an unjust kingdom, or a wanderer chasing dreams across oceans.</p>
+
+      <p class="section-title">Why Fiction Matters</p>
+      <p>Fiction is not “just made up stories.” It shapes the way we think, feel, and connect with others.</p>
+      <ul>
+        <li>It builds empathy – Stepping into a character’s shoes teaches us perspectives we may never encounter in real life.</li>
+        <li>It fuels creativity – Imaginary worlds spark ideas that can inspire art, music, and even real-world innovations.</li>
+        <li>It gives escape – When life gets heavy, a well-written novel can feel like a safe refuge.</li>
+      </ul>
+
+      <p class="section-title">The Magic Behind the Words</p>
+      <p>What makes fiction so powerful is its ability to blend truth with imagination. A love story might be entirely invented, but the emotions feel real. A fantasy kingdom may not exist, yet its struggles mirror our own society. Good fiction doesn’t just entertain — it lingers, echoing in our minds long after the last page.</p>
+
+      <p class="section-title">Fiction in All Its Forms</p>
+      <p>Fiction isn’t limited to books. It thrives in films, TV shows, web series, and even video games. Anywhere there’s a story, there’s fiction breathing life into it. Whether it’s a classic like Pride and Prejudice or a binge-worthy show on Netflix, the thread is the same — a crafted world, characters we care about, and emotions that make us feel alive.</p>
+
+      <p class="section-title">Why You Should Read (or Write) More Fiction</p>
+      <p>The more fiction you consume, the more you expand your inner world. Reading makes us more imaginative, more empathetic, and more open to possibilities. Writing fiction, on the other hand, is like creating a universe from scratch — every character, every choice, every plot twist is yours to shape.</p>
+
+      <p>So, the next time someone asks why you read “made up stories,” just smile and say: <em>“Because fiction lets me live a thousand lives — and one is never enough.”</em></p>
+    </div>
+  </div>
+</body>
+</html>

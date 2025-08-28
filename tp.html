@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <title>Tamil Poems</title>
+  <link rel="icon" href="logo.png">
+  <style>
+    :root {
+      --bg: #fef9f4;
+      --card: #ffffff;
+      --gold: #d4a017;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      --radius: 16px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, Arial, "Tamil Sangam MN", "Latha", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    /* NAVBAR */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .brand {
+      font-weight: 700;
+      font-size: 18px;
+    }
+    .nav-center {
+      display: flex;
+      gap: 24px;
+    }
+    .nav-center a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+      padding-bottom: 4px;
+      border-bottom: 2px solid transparent;
+      transition: 0.2s;
+    }
+    .nav-center a:hover {
+      color: var(--gold);
+    }
+    .nav-center .active {
+      color: var(--gold);
+      border-bottom-color: var(--gold);
+    }
+    .nav-icons {
+      display: flex;
+      gap: 14px;
+    }
+    .nav-icons img {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .nav-icons img:hover {
+      transform: scale(1.1);
+    }
+
+    /* HEADER */
+    .hero {
+      text-align: center;
+      padding: 40px 16px 20px;
+    }
+    .hero h1 {
+      font-size: 20px;
+      color: var(--gold);
+      margin-bottom: 6px;
+    }
+    .hero p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    /* POEM CARDS */
+    .grid {
+      max-width: 1000px;
+      margin: 20px auto 50px;
+      padding: 0 16px;
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 20px;
+      box-shadow: var(--shadow);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+    .title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--gold);
+    }
+    .line {
+      font-size: 15px;
+      color: var(--text);
+      line-height: 1.6;
+      font-style: italic;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--gold);
+      color: #fff;
+      text-align: center;
+      padding: 12px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <img src="a.png" alt="Logo" height="50px">
+    <div class="nav-center">
+      <a href="index.html">Home</a>
+      <a href="Poems.html" class="active">Poems</a>
+      <a href="Blogs.html">Blogs</a>
+      <a href="Books.html">Books</a>
+      <a href="Support.html">Support</a>
+    </div>
+    <div class="nav-icons">
+    <a href="https://www.instagram.com/_whispersof_ink_/" target="_blank">
+          <img src="instagram.jpg" alt="Instagram">
+        </a>
+        <a href="https://www.wattpad.com/user/Whispersofink3?utm_source=android&utm_medium=whatsapp&utm_campaign=invitefriends" target="_blank">
+          <img src="wattpad.jpg" alt="Wattpad">
+        </a>
+        <a href="https://www.youtube.com/channel/UC5YR04rRZL_YfJEEXhyXkTQ" target="_blank">
+          <img src="youtube.jpg" alt="YouTube">
+        </a>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="hero">
+    <h1>தமிழ் கவிதைகள்</h1>
+  </header>
+
+  <!-- POEMS -->
+  <section class="grid">
+    <div class="card">
+      <div class="title">நீயும் நானும்</div>
+      <div class="line">நீ எரியும் நெருப்பாயினும், நான் உனக்காக பனியாய் உருகுவேன்.</div>
+    </div>
+    <div class="card">
+      <div class="title">கைக்கிளை</div>
+      <div class="line">உன் இமைகள்
+என்னுடன் உரையாட
+அதை வார்த்தையாய்
+சொல்லும் கவிஞனாய்
+உன் மீது நான்
+கொண்டேன்
+காமம் இல்லா
+கைக்கிளை...!!!</div>
+    </div>
+    <div class="card">
+      <div class="title">நினைவில் நீ</div>
+      <div class="line">கண்கள் மூடினாலும், நீயே முதல் வரி.</div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Whispers of Ink | All Rights Reserved
+  </footer>
+
+</body>
+</html>

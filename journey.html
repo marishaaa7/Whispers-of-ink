@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JOURNEY — Travel Story</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1:#0ea5e9;   /* bright blue */
+      --bg2:#22c55e;   /* green */
+      --card:#eef6fb;  /* light icy */
+      --ink:#0f172a;   /* deep slate */
+      --muted:#334155; /* slate text */
+      --accent:#ef4444;/* soft red for small emphasis */
+    }
+    *{box-sizing:border-box}
+    html,body{
+      height:100%;
+      margin:0;
+      font-family:"Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--muted);
+      background: radial-gradient(1200px 600px at 20% 10%, rgba(255,255,255,.16), transparent 60%),
+                  linear-gradient(125deg, var(--bg1), var(--bg2));
+    }
+    .wrap{
+      min-height:100%;
+      display:grid;
+      place-items:center;
+      padding:6rem 1rem;
+    }
+    .card{
+      width:min(900px, 92vw);
+      background:var(--card);
+      border-radius:22px;
+      box-shadow:
+        0 12px 30px rgba(2, 8, 23, .18),
+        inset 0 1px 0 rgba(255,255,255,.6);
+      padding:3rem clamp(1.25rem, 3vw, 3rem);
+      backdrop-filter: blur(2px);
+    }
+    h1{
+      font-family:"Playfair Display", serif;
+      letter-spacing:.5px;
+      text-align:center;
+      color:#0b2b4a;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      margin:0 0 1.25rem 0;
+      text-shadow: 0 1px 0 rgba(255,255,255,.8);
+    }
+    .lead{
+      font-weight:500;
+      color:var(--ink);
+      font-size: clamp(1.05rem, 2.2vw, 1.2rem);
+      line-height:1.9;
+      margin:0 0 1.25rem 0;
+    }
+    p{
+      margin:.85rem 0;
+      font-size: clamp(1rem, 2vw, 1.07rem);
+      line-height:1.9;
+    }
+    .section-title{
+      font-weight:700;
+      color:var(--ink);
+      margin-top:1.4rem;
+    }
+    em.tag{
+      font-style:normal;
+      color:var(--accent);
+      font-weight:600;
+    }
+    @media (max-width:520px){
+      .card{ padding:2rem 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <article class="card">
+      <h1>JOURNEY</h1>
+
+      <p class="lead">The Journey – More Than Just a Destination</p>
+
+      <p>We often hear the saying, “It’s not about the destination, it’s about the journey.” But in a world that moves so fast, we sometimes forget what that truly means.</p>
+
+      <p>A journey isn’t just about reaching a goal — it’s about every step, stumble, and sunrise along the way. It’s about the strangers who become friends, the challenges that turn into lessons, and the moments of doubt that quietly shape our strength.</p>
+
+      <p class="section-title">Every Journey Changes You</p>
+
+      <p>No one returns from a journey as the same person who began it. Whether it’s a road trip across a continent, a personal battle against fear, or the slow climb toward a dream, something shifts within you.</p>
+
+      <p>You learn patience when things don’t go as planned.</p>
+      <p>You discover resilience when the road gets rough.</p>
+      <p>You find joy in the little things — a kind smile, a breathtaking view, a quiet moment of peace.</p>
+
+      <p class="section-title">The Beauty in the Unknown</p>
+
+      <p>The best journeys are the ones where you don’t have every answer. The uncertainty makes room for surprises — for meeting people you never expected, taking turns you never planned, and finding beauty where you never thought to look.</p>
+
+      <p class="section-title">Your Journey is Yours Alone</p>
+
+      <p>It’s easy to compare your path to someone else’s. But no two journeys are alike. Yours may take longer, twist more, or lead somewhere entirely unexpected — and that’s what makes it uniquely yours.</p>
+
+      <p class="section-title">A Gentle Reminder</p>
+
+      <p>Don’t rush to the finish line. Don’t wait to celebrate only when you “arrive.” The laughter with friends, the tears on hard days, the silent victories — they are the journey.</p>
+
+      <p>Because in the end, you’ll realize that every step was part of the story you were meant to live.</p>
+
+    </article>
+  </main>
+</body>
+</html>

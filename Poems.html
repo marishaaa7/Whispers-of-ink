@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Whispers of Ink - Poems</title>
+    <link rel="icon" href="logo.png">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #fffaf0;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* HEADER STYLING */
+        header {
+            background: white;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 30px;
+            margin-right: 8px;
+        }
+
+        .logo h1 {
+            font-family: 'Playfair Display', serif;
+            color: goldenrod;
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            margin: 0 15px;
+            font-weight: 500;
+            padding-bottom: 5px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: goldenrod;
+        }
+
+        nav a.active {
+            border-bottom: 2px solid goldenrod;
+            color: goldenrod;
+        }
+
+        .social-icons a {
+            margin-left: 15px;
+        }
+
+        /* MAIN CONTENT */
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .page-title {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: goldenrod;
+            margin-bottom: 20px;
+        }
+
+        /* Tamil Poems Button */
+        .tamil-poems-btn {
+            display: block;
+            text-align: center;
+            margin: 20px auto 40px auto;
+        }
+
+        .tamil-poems-btn a {
+            display: inline-block;
+            background-color: goldenrod;
+            color: black;
+            padding: 15px 15px;
+            border-radius: 25px;
+            font-size: 10px;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+
+        .tamil-poems-btn a:hover {
+            background-color: #e6c200;
+        }
+
+        .poem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .poem-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            cursor: pointer;
+        }
+
+        .poem-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+        }
+
+        .poem-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: goldenrod;
+            margin-bottom: 10px;
+        }
+
+        .poem-text {
+            font-style: italic;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: goldenrod;
+            color: white;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="a.png" alt="Logo">
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="poems.html" class="active">Poems</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="books.html">Books</a>
+        <a href="support.html">Support</a>
+    </nav>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/_whispersof_ink_/"><img src="instagram.jpg" alt="Instagram" height="20"></a>
+        <a href="https://www.wattpad.com/user/Whispersofink3"><img src="wattpad.jpg" alt="Wattpad" height="20"></a>
+        <a href="https://www.youtube.com/channel/UC5YR04rRZL_YfJEEXhyXkTQ"><img src="youtube.jpg" alt="YouTube" height="20"></a>
+    </div>
+</header>
+
+<div class="container">
+    <h2 class="page-title">You're Soul can Hear</h2>
+
+    <!-- Tamil Poems Button -->
+    <div class="tamil-poems-btn">
+        <a href="tp.html">Tamil Poems</a>
+    </div>
+
+    <!-- Regular Poems Grid -->
+    <div class="poem-grid">
+        <div class="poem-card">
+            <h3 class="poem-title">You and I</h3>
+            <p class="poem-text">I will be the ice even you are always Fire</p>
+        </div>
+
+        <div class="poem-card">
+            <h3 class="poem-title">The Silent Ink</h3>
+            <p class="poem-text">Words that can't be spoken by lips can spoke with ink</p>
+        </div>
+
+        <div class="poem-card">
+            <h3 class="poem-title">Eternal Flame</h3>
+            <p class="poem-text">A candle burns herself in the dark,Just to light someone's eyes </p>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

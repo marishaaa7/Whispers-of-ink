@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Whispers of Ink</title>
+  <link rel="icon" href="logo.png" >
+
+
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #fffbe6, #ffffff);
+      color: #333;
+      animation: fadeIn 1.5s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    header {
+      background: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .nav-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo-title img {
+      height: 60px; 
+      width: 60px;
+      object-fit: contain;
+    }
+    .logo-title span {
+      font-size: 22px;
+      font-weight: bold;
+      color:#ffcc00;
+    }
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+    .social-icons {
+      display: flex;
+      gap: 15px;
+    }
+    .social-icons img {
+      height: 28px;
+      width: 28px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .social-icons img:hover {
+      transform: scale(1.1);
+    }
+    main {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    main p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .highlight {
+      margin-top: 30px;
+      padding: 20px;
+      background: #fff4cc;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      font-size: 20px;
+      font-weight: bold;
+      color: #cc9900;
+      position: relative;
+      display: inline-block;
+    }
+    /* Feather pen animation */
+    .feather {
+      position: absolute;
+      right: -60px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50px;
+      animation: floatFeather 3s ease-in-out infinite;
+    }
+    @keyframes floatFeather {
+      0%, 100% { transform: translateY(-50%) rotate(-5deg); }
+      50% { transform: translateY(-60%) rotate(5deg); }
+    }
+    .creative {
+      margin-top: 25px;
+      padding: 20px;
+      border-left: 5px solid #ffcc00;
+      background: #fffdf5;
+      font-style: italic;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .contact-info {
+      margin-top: 30px;
+      padding: 15px;
+      background: #000;
+      color: #fff;
+      border-radius: 8px;
+    }
+    .contact-info p {
+      margin: 5px 0;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="nav-container">
+      <div class="logo-title">
+        <img src="a.png" alt="Logo">
+        <span>Whispers of Ink</span>
+      </div>
+      <nav>
+        <a href="Poems.html">Poems</a>
+        <a href="Blogs.html">Blogs</a>
+        <a href="Books.html">Books</a>
+        <a href="Support.html">Support</a>
+      </nav>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/_whispersof_ink_/" target="_blank">
+          <img src="instagram.jpg" alt="Instagram">
+        </a>
+        <a href="https://www.wattpad.com/user/YOURUSERNAME" target="_blank">
+          <img src="wattpad.jpg" alt="Wattpad">
+        </a>
+        <a href="https://youtube.com/YOURCHANNEL" target="_blank">
+          <img src="youtube.jpg" alt="YouTube">
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <p>
+      Welcome to <span style="color:#ffcc00; font-weight:bold;">Whispers of Ink</span>,
+      where every word blooms into a feeling and every line carries a heartbeat.
+      Here, you'll find poems that speak to the soul, stories that linger in your mind,
+      and thoughts that wander between reality and dreams.
+    </p>
+
+    <div class="highlight">
+      “Ink is the voice the heart speaks when the lips fall silent.”
+      <img src="a.png" alt="Feather Pen" class="feather">
+    </div>
+
+    <div class="creative">
+      In this sanctuary of words, every poem is a candle, every story a spark.
+      Here, we light up the dark corners of the heart with verses that stay long
+      after the page is turned.
+    </div>
+
+    <div class="contact-info">
+      <p>Email: <a href="whispersofink03@gmail.com">whispersofink03@gmail.com</a></p>
+
+    </div>
+  </main>
+
+</body>
+</html>

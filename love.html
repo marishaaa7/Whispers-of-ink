@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LOVE — Header & Paragraph</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&family=Noto+Serif+Tamil:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1:#ff9a9e; /* peach pink */
+      --bg2:#fad0c4; /* light blush */
+      --ink:#2a2a2a;
+      --accent:#ff4d6d;
+      --card:#ffffffee;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; 
+      font-family: 'Noto Serif Tamil', serif;
+      color:var(--ink);
+      background: linear-gradient(120deg, var(--bg1), var(--bg2));
+      background-size: 200% 200%;
+      animation: bgshift 12s ease-in-out infinite;
+      display:flex; 
+      align-items:flex-start; 
+      justify-content:center;
+      padding: 56px 16px 96px;
+    }
+    @keyframes bgshift{ 
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+    }
+
+    .wrap{width:100%; max-width:900px; position:relative}
+
+    /* Title */
+    .title{
+      font-family:'Poppins', system-ui, -apple-system, 'Noto Serif Tamil', serif;
+      font-weight:800;
+      text-align:center;
+      letter-spacing:0.25rem;
+      font-size: clamp(42px, 7vw, 96px);
+      margin: 0 0 20px;
+      line-height:1;
+      background: linear-gradient(90deg, #fff 0%, #ffe7ef 30%, #ffd3de 60%, #fff 100%);
+      -webkit-background-clip:text; background-clip:text; color:transparent;
+      text-shadow: 0 6px 30px rgba(255,255,255,.35);
+    }
+    .subtitle{ 
+      text-align:center; margin: 0 0 28px; font-family:'Poppins', sans-serif; 
+      font-weight:500; opacity:.85; letter-spacing:.06em
+    }
+
+    /* Card for paragraph */
+    .card{
+      position:relative;
+      background: var(--card);
+      backdrop-filter: blur(6px);
+      border-radius: 28px;
+      padding: clamp(20px, 4vw, 40px);
+      box-shadow: 0 10px 30px rgba(0,0,0,.12);
+      border: 1px solid rgba(255,255,255,.7);
+      overflow:hidden;
+    }
+    .card::before, .card::after{
+      content:"\275D"; /* ❝/❞ quotes */
+      position:absolute; font-family:'Poppins', sans-serif; font-weight:800; line-height:1;
+      font-size: clamp(56px, 10vw, 120px); color: rgba(255,77,109,.08);
+      pointer-events:none;
+    }
+    .card::before{content:"\275D"; left:16px; top:-12px;}
+    .card::after {content:"\275E"; right:16px; bottom:-24px;}
+
+    .love-note{
+      font-size: clamp(16px, 2.2vw, 20px);
+      line-height: 1.9;
+      margin:0;
+      text-wrap: pretty;
+    }
+
+    /* Drop cap for the very first letter */
+    .love-note:first-letter{
+      font-family:'Poppins', sans-serif;
+      initial-letter: 2 1; /* modern browsers */
+      -webkit-initial-letter: 2 1;
+      font-weight:800;
+      color: var(--accent);
+      margin-right: .4rem;
+    }
+
+    /* Divider */
+    .divider{
+      width:100%; height:1px; background:linear-gradient(90deg, transparent, rgba(0,0,0,.15), transparent);
+      margin: 20px 0 0;
+    }
+
+    /* Tiny footer */
+    .meta{
+      display:flex; align-items:center; gap:10px; font-family:'Poppins',sans-serif; font-size:12px; opacity:.75; margin-top:14px;
+    }
+    .dot{width:6px; height:6px; border-radius:50%; background:var(--accent)}
+
+    /* Floating hearts background */
+    .hearts{ position:fixed; inset:0; overflow:hidden; pointer-events:none; }
+    .hearts span{
+      position:absolute; bottom:-40px; font-size: clamp(16px, 3vw, 28px);
+      animation: floatUp linear infinite;
+      opacity:.18;
+      filter: drop-shadow(0 4px 10px rgba(0,0,0,.15));
+    }
+    @keyframes floatUp{
+      from{ transform: translateY(0) translateX(0) rotate(0deg); }
+      to{ transform: translateY(-120vh) translateX(-20px) rotate(12deg); }
+    }
+    /* Distribute hearts with CSS variables */
+    .hearts span{ left: calc(var(--x, 50) * 1%); animation-duration: calc(10s + var(--t, 0) * 1s); animation-delay: calc(var(--d, 0) * 1s); }
+
+    /* Small screens spacing */
+    @media (max-width:560px){
+      body{ padding-top: 44px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- floating hearts -->
+  <div class="hearts" aria-hidden="true">
+    <span style="--x:10; --t:8; --d:0">♥</span>
+    <span style="--x:22; --t:11; --d:2">♥</span>
+    <span style="--x:36; --t:10; --d:4">♥</span>
+    <span style="--x:58; --t:12; --d:1">♥</span>
+    <span style="--x:75; --t:9;  --d:3">♥</span>
+    <span style="--x:88; --t:13; --d:5">♥</span>
+  </div>
+
+  <main class="wrap">
+    <h1 class="title">LOVE</h1>
+    <!-- Optional mini caption under the title (delete if not needed) -->
+    <p class="subtitle">where your words feel at home ✨</p>
+
+    <section class="card" aria-label="Love Paragraph">
+      <!-- 👉 Paste your paragraph inside this <p>. You can use Tamil or English. -->
+      <p class="love-note">
+
+Today, I realized love isn’t always a loud declaration or a grand gesture.
+It’s in the unspoken things — the way someone remembers you like your tea slightly sweeter, how they text “reached home?” before you even think to update them, or the way their eyes soften when they see you laughing.
+
+Love is the quiet language the world doesn’t teach us in school. It’s the comfort of sitting beside someone in silence, yet feeling like your heart is telling them entire novels. It’s in the small acts we often overlook — folding someone’s blanket before they wake, keeping their favorite pen safe, or tucking away their worries with a simple, “It’s okay. I’m here.”
+
+The more I think about it, the more I feel that love is less about finding the right person and more about becoming the safe place for someone’s soul.
+
+And maybe… that’s what makes love so terrifying and beautiful at once — it’s fragile enough to break, but strong enough to hold two hearts together even on the stormiest days.
+
+If anyone ever asks me to define love, I think I’ll just smile and say,
+“It’s the feeling of coming home — even when you’re miles away from where you live.”
+
+If you want, I can also write you a more romantic, diary-like version where it feels like you’re secretly confessing feelings to someone. That one usually pulls readers in even deeper.
+      </p>
+
+      <div class="divider"></div>
+      <div class="meta"><span class="dot"></span> crafted with ❤ by you</div>
+    </section>
+  </main>
+</body>
+</html>
